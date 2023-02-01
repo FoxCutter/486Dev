@@ -1,4 +1,4 @@
-19111988929172989
+19113664306450823
 486
 PGA169
 Support PGA 169 pins
@@ -73100,6 +73100,13 @@ Potentiometer vertical Vishay T73YP
 0
 3
 3
+Private_lib
+7mm x 7mm  Tactile Switch
+
+
+0
+6
+6
 Private_lib
 DIN41612_C_2x32_Horizontal
 DIN 41612 connector, type C, horizontal, 32 pins wide, 2 rows, full configuration

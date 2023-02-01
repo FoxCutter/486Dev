@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 107)
+    (start_pass_no 203)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -102,23 +102,23 @@
     )
   )
   (class "kicad_default"
-    IGNNE* FLUSH* KEN* BRDY* BOFF* DP0 DP1 DP2
-    DP3 RDY* EADS* AHOLD HOLD NMI INTR RESET
-    PCHK* CLK A20M* "W_R*" "D_C*" "M_IO*" ADS* BS16*
-    BS8* BE3* BE2* BE1* BE0* HLDA BREQ FERR*
-    PLOCK* LOCK* PCD PWT BLAST* "Net-(U2-Pad3)" A1 BHE#
-    BLE# A31 A30 A29 A28 A27 A26 A25
-    A24 A23 A22 A21 A20 A19 A18 A17
-    A16 A15 A14 A13 A12 A11 A10 A9
-    A8 A7 A6 A5 A4 A3 A2 D31
-    D30 D29 D28 D27 D26 D25 D24 D23
-    D22 D21 D20 D19 D18 D17 D16 D15
-    D14 D13 D12 D11 D10 D9 D8 D7
-    D6 D5 D4 D3 D2 D1 D0 NC16
-    NC15 NC14 NC13 NC12 NC11 NC10 NC9 NC8
-    NC7 NC6 NC5 NC4 NC3 NC2 NC1 NC0
-    "Net-(J1-Pad1)" "Net-(U2-Pad12)" "Net-(U3-Pad3)" "Net-(U2-Pad13)" "Net-(U2-Pad8)" /BRDY*R /RDY*R "Net-(D1-Pad1)"
-    "Net-(J9-Pad8)" "Net-(J9-Pad6)" "Net-(J9-Pad4)" "Net-(J9-Pad2)"
+    DP0 DP1 DP2 DP3 AHOLD HOLD NMI INTR
+    RESET CLK HLDA BREQ PCD PWT "Net-(U2-Pad3)" A1
+    BHE# BLE# A31 A30 A29 A28 A27 A26
+    A25 A24 A23 A22 A21 A20 A19 A18
+    A17 A16 A15 A14 A13 A12 A11 A10
+    A9 A8 A7 A6 A5 A4 A3 A2
+    D31 D30 D29 D28 D27 D26 D25 D24
+    D23 D22 D21 D20 D19 D18 D17 D16
+    D15 D14 D13 D12 D11 D10 D9 D8
+    D7 D6 D5 D4 D3 D2 D1 D0
+    NC16 NC15 NC14 NC13 NC12 NC11 NC10 NC9
+    NC8 NC7 NC6 NC5 NC4 NC3 NC2 NC1
+    NC0 "Net-(U2-Pad12)" "Net-(U3-Pad3)" "Net-(U2-Pad13)" "Net-(U2-Pad8)" "Net-(D1-Pad1)" IGNNE# KEN#
+    A20M# PLOCK# LOCK# BLAST# BRDY# RDY# ADS# "W_R#"
+    "D_C#" "M_IO#" /BRDY#R /RDY#R FLUSH# EADS# FERR# PCHK#
+    BE3# BE2# BE1# BE0# BOFF# BS16# BS8# "Net-(J2-Pad8)"
+    "Net-(J2-Pad6)" "Net-(J2-Pad4)" "Net-(J2-Pad2)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
