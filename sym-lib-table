@@ -1,3 +1,3 @@
 (sym_lib_table
-  (lib (name 486)(type Legacy)(uri ${KIPRJMOD}/80486.lib)(options "")(descr ""))
+  (lib (name "80486")(type "KiCad")(uri "${KIPRJMOD}/80486.kicad_sym")(options "")(descr ""))
 )
