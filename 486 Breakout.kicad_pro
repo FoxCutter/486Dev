@@ -44,8 +44,8 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "45_degree_only": true,
-          "min_clearance": 0.508
+          "45_degree_only": false,
+          "min_clearance": 0.254
         }
       },
       "diff_pair_dimensions": [],
@@ -366,9 +366,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "+5V",
-        "nets": [
-          "+5V"
-        ],
+        "nets": [],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.25,
@@ -406,7 +404,7 @@
     "last_paths": {
       "gencad": "",
       "idf": "",
-      "netlist": "",
+      "netlist": "./",
       "specctra_dsn": "",
       "step": "",
       "vrml": ""
