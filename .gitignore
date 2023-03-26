@@ -348,3 +348,11 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+# PCB Backups
+/486 Breakout/486 Breakout-backups
+
+# ASM output files
+*.rom
+*.lst
+
