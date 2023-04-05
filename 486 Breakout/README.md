@@ -7,7 +7,7 @@
 ## SMD parts
 
 
-The decoupling capacitors for the CPU are made with surface mount parts. This is done because the gap  the socket provides between board and CPU is fairly limited, and while Through-Hole parts can be used, they might not have enough clearance. Now these are using 0805/2012 size resistors, and are fairly spread out so there should be enough room even if you've never worked with surface mount parts before.
+The decoupling capacitors for the CPU are made with surface mount parts. This is done because the gap the socket provides between board and CPU is fairly limited, and while Through-Hole parts can be used, they might not have enough clearance. Now these are using 0805/2012 size resistors, and are fairly spread out so there should be enough room even if you've never worked with surface mount parts before.
 
 
 The capacitors themselves are 1uF (marked as 105), and are fairly inexpensive.
@@ -16,7 +16,7 @@ The capacitors themselves are 1uF (marked as 105), and are fairly inexpensive.
 ## 7400 ICs
 
 
-The pair of 7400 NAND gate ICs provide the logic for generating the _BHE#_, _BHL#_, _A1_ and _A0_ and can be left of the board if you do not need or would rather generate those signals yourself.
+The pair of 7400 NAND gate ICs provide the logic for generating the _BHE#_, _BHL#_, _A1_ and _A0_ and can be left off the board if you do not need or would rather generate those signals yourself.
 
 
 ## CPU Socket
@@ -76,7 +76,7 @@ The original version of the 486SX has a slightly different pin arrangement, and 
 ### Later version of the 486-DX
 
 
-Later version of the DX add a few new pins, _SRESET_, _SMI#_, _SMIACT#_, _STPCLK#_ and _UP#_. While these have built in pull up/down resisters, if the cpu you are working on has them, it would be best to pull _SRESET_ low , and _SMI#_, _STPCLK#_ and _UP#_ high.
+Later version of the DX add a few new pins, _SRESET_, _SMI#_, _SMIACT#_, _STPCLK#_ and _UP#_. While these have built in pull up/down resisters, if the cpu you are working on has them, it would be best to pull _SRESET_ low, and _SMI#_, _STPCLK#_ and _UP#_ high.
 
 
 ### 486-DX2 And 486-SX2
@@ -90,11 +90,18 @@ The SX2 brought the pins in line with the DX2, so should be fully compatible.
 
 ### 486-DX4
 
+The DX4 adds the ability to control the clock multiplier using the **CLKMUL** pin durring a reset. So you need to make sure that the pin is properly pulled up/down depending on how you want to use the multiplier. 
 
-This is probably the most challenging chip to work with, as it runs at 3.3 volts and not 5 volts, with the exception of the **J1** pin. In this case of using this chip, you need to make sure that the 7400 chips are also 3.3 volt compatible.
+In addititon, the DX4 is a 3 volt CPU.
 
 
-The most important thing you must to is cut jumper **JP1** on the back of the board, and attach a 5 volt input to **TP1**. Failing to do this could cause undefined results.
+### 3 Volt CPU
+
+This is probably the most challenging chip to work with, as it runs at 3.3 volts and not 5 volts. It can support 5v logic, but extra steps are needed to provide a 5 volt reference input to the _J1_ pin on the cpu.
+
+Please double check the data sheet before doing this, to make sure things work the way you will want them to!
+
+If you are using the 3.3 volt cpu with 5 volt logic, you must cut jumper **JP1** on the back of the board, and attach a 5 volt input to **TP1**. Failing to do this could cause undefined results.
 
 
 ### Test Port
@@ -107,3 +114,8 @@ The test port is available on some DX models, and appears to be on all DX3 and D
 
 
 The Write-Back Enhanced version of the DX2 and DX4 add the _INV_, _HITM#_, _CHACH#_ and _WB-WT#_ pins. The _INV_ pin should be pulled high, while the _FLUSH#_ pin should be pulled low.
+
+
+### Can I use the 486 Symbol/Footprint in my own projects?
+
+Of course, they are standard Kicad Symbols and Footprint, and you can ues them without credit. I tried to make them as generic as possible for all PGA versions of the DX and majority of SX cpus (the same issues with the SX from above apply). You would need to adjust and add some pins for the QFP versions.

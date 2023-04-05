@@ -355,4 +355,6 @@ MigrationBackup/
 # ASM output files
 *.rom
 *.lst
+*.map
+
 
