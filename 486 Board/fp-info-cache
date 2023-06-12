@@ -1,11 +1,4 @@
-20950485894915934
-486
-PGA169
-Support PGA 169 pins
-PGA
-0
-169
-169
+20950491181266849
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -77468,6 +77461,13 @@ Fox Logo-Small
 0
 0
 0
+Private Lib
+PCIEx16
+
+
+0
+164
+164
 RF
 Skyworks_SKY13575_639LF
 http://www.skyworksinc.com/uploads/documents/SKY13575_639LF_203270D.pdf
